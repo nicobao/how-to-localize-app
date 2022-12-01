@@ -19,9 +19,13 @@ To enable fast-feedback for translators, you should:
 ## other possible workflow
 
 From Weblate, you can directly trigger a PR to a branch of the same repo that the dev are working on.
+
 But that means weblate will have write access to your repo.
+
 That also makes version handling difficult without having some source branch that is ALWAYS in sync with the version you're trying to translate.
+
 It turns out this condition is hard to comply with. The `main` branch usually evolves much faster than that is being translated in Weblate.
+
 If you're not OK with having unstranslated strings, then you cannot do that.
 
 
@@ -38,4 +42,5 @@ We make one translation file per JS file.
 ## License
 
 Most of this work has originally been done within CIDgravity.
+
 This repo is distributed under the [BSD+Patent license](https://opensource.org/licenses/BSDplusPatent)
