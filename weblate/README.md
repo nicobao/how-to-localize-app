@@ -121,7 +121,7 @@ Configure the component as follows:
 - Choose `main` for `Repository branch`
 - Click on `Continue`, choose `Specify configuration manually` and click on `Continue`. Everything will be prefilled until `Repository branch`.
 - Choose `git@github.com:MyApplication/MyApplication-localization.git` for repository push URL
-- Choose `feat-weblate-myapplication-main` for push branch
+- Choose `main` OR `feat-weblate-myapplication-main` for push branch (up to you if you want to add another step of PR generation and validation)
 - Choose `https://github.com/MyApplication/MyApplication-localization/blob/{{branch}}/{{filename}}#L{{line}}` for repository browser
 - Choose `i18next JSON file v3` for file format
 - Choose `myapplication/locales/*/common.json` for file mask
@@ -328,6 +328,8 @@ root@localization:~ via 🐍 v3.8.10 ❯ crontab -l
 - Add a GitHub webhook: https://docs.weblate.org/en/latest/admin/continuous.html#github-setup - use `https://localization.myapplication.com/hooks/github` for the payload URL. This will notify weblate instantly anytime someone pushes to the repo!
 
 ## Note
+
+Weblate can send a PR via the GitHub API instead of pushing to a branch. It turns out when you activate the adds-on, it becomes buggy, so I'd avoid it and push to a branch, then trigger a PR via a GitHub Action OR simply pushing to `main`.
 
 In general, renaming strings is bad. The sync between the JSON file and the Weblate DB doesn't work well.
 Advice to devs: either delete one or add a new one. This is true for any localization management solutions, including Pontoon.
