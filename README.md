@@ -24,7 +24,7 @@ But that means weblate will have write access to your repo.
 
 That also makes version handling difficult without having some source branch that is ALWAYS in sync with the version you're trying to translate.
 
-It turns out this condition is hard to comply with. The `main` branch usually evolves much faster than that is being translated in Weblate.
+It turns out this condition is hard to comply with. The `main` branch usually evolves much faster than it is being translated in Weblate.
 
 If you're not OK with having unstranslated strings, then you cannot do that.
 
