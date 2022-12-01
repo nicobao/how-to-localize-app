@@ -27,13 +27,13 @@ If you're not OK with having unstranslated strings, then you cannot do that.
 
 ## front-localizaed-template
 
-This is the frontend code, it's self explanatory.
+[This is the frontend code](./front-localized-template), it's self explanatory.
 
 We make one translation file per JS file.
 
 ## weblate
 
-Contains the weblate instructions.
+[Contains the weblate instructions](./weblate).
 
 ## License
 
