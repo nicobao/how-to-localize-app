@@ -6,10 +6,10 @@ This is a quick template with instructions on how to localize a React SPA end-to
 
 - 2 repositories: one with the main code (ex: `front-localized-template`), and one separate with only the `locales/` directory that only Weblate interact with
 - Devs only push to the `public/locales/dev` directory.
-- Once a release is done, the ops team copy-paste `public/locales` to the weblate-specific repository and push it its main branch via a PR. This process is probably manual.
-- Once pushed, Weblate will automatically receive the info because of the webhook
+- Once a release is done, the ops team copy-paste `public/locales` to the weblate-specific repository and merge it to the repo's main branch via a PR. This process is manual.
+- Once pushed, Weblate will automatically be updated because of the webhook.
 - Translators do their job & devs keep working
-- Once translators finish their job, the ops team serve the react app previously released but with `/locales` being redirected to a copy of the Weblate repo with all the translations via a reverse proxy like nginx (the ops team can also tag and release some package of the `/locales` directory if they like)
+- Once translators finish their job, the ops team serve the react app previously released, and use a reverse proxy such as nginx to redirect the `/locales` route to a copy of the Weblate repo containing all the `/locales` translations
 - repeat
 
 To enable fast-feedback for translators, you should:
@@ -18,7 +18,7 @@ To enable fast-feedback for translators, you should:
 
 ## other possible workflow
 
-You can also trigger a PR directly to the a branch in the main repo from Weblate.
+From Weblate, you can directly trigger a PR to a branch of the same repo that the dev are working on.
 But that means weblate will have write access to your repo.
 That also makes version handling difficult without having some source branch that is ALWAYS in sync with the version you're trying to translate.
 It turns out this condition is hard to comply with. The `main` branch usually evolves much faster than that is being translated in Weblate.
