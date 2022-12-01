@@ -329,7 +329,7 @@ root@localization:~ via 🐍 v3.8.10 ❯ crontab -l
 
 ## Note
 
-Weblate can send a PR via the GitHub API instead of pushing to a branch. It turns out when you activate the adds-on, it becomes buggy, so I'd avoid it and push to a branch, then trigger a PR via a GitHub Action OR simply pushing to `main`.
+Weblate can send a PR via the GitHub API instead of pushing to a branch. It turns out when you activate the adds-on, it becomes buggy, so I'd avoid it and push to a branch, then trigger a PR via a GitHub Action OR simply push to `main`.
 
 In general, renaming strings is bad. The sync between the JSON file and the Weblate DB doesn't work well.
 Advice to devs: either delete one or add a new one. This is true for any localization management solutions, including Pontoon.
