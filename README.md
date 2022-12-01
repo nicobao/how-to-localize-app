@@ -37,7 +37,9 @@ We make one translation file per JS file.
 
 ## weblate
 
-[Contains the weblate instructions](./weblate).
+[weblate directory](./weblate) contains the weblate instructions.
+
+[example-weblate-repo directory](./example-weblate-repo) is an example of repository that should be connected to Weblate.
 
 ## License
 

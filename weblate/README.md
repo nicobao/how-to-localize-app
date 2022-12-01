@@ -172,6 +172,7 @@ Now you need to create add-ons:
 		- Leave language filter be
 		- Leave `Clone add-ons ...` selected and `Remove components for inexisting files` unchecked.
 		- Save and confirm the selection. It's normal that they detect the `dev` language. It will not appear in any languages in Weblate anyway because `dev` is not a recognized language format in Weblate. And `dev` is still configured as the intermediate language, it's ok.
+		- Note: if you have only `locales/dev/componentName.json` but not `locales/en-US/componentName.json` then the component `componentName` will not be picked up by the add-on (a bug). Devs need to create an empty JSON file `{}` in `locales/en-US/componentName.json`.
 
 
 ## Edit the auto-generated MyApplication glossary component
