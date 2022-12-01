@@ -29,7 +29,7 @@ It turns out this condition is hard to comply with. The `main` branch usually ev
 If you're not OK with having unstranslated strings, then you cannot do that.
 
 
-## front-localizaed-template
+## React & i18n
 
 [This is the frontend code](./front-localized-template), it's self explanatory.
 
